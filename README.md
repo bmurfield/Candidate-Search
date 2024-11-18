@@ -23,6 +23,8 @@ An application to search github pages for job candidates
 
 This project is deployed using Netlify, so just click on the link below to be taken to the webpage:
 
+https://findacandidate.netlify.app/
+
 Once on the page the user is presented with potential candidates. The user can press the + to save a user to the table and the - button to skip to the next candidate.
 
 ## Usage
