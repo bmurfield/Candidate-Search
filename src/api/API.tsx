@@ -2,7 +2,7 @@ import { Candidate } from '../interfaces/Candidate.interface';
 
 
 const searchGithub = async (): Promise<Candidate[]> => {
-console.log(import.meta.env.VITE_GITHUB_TOKEN)
+console.log(import.meta.env);
 
   try {
     const start = Math.floor(Math.random() * 100000000) + 1;
