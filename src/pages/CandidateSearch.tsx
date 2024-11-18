@@ -8,7 +8,7 @@ const CandidateSearch = () => {
   useEffect(() => {
     const loadCandidates = async () => {
       const candidates = await searchGithub();
-      console.log(candidate)
+
 
       setCandidatesList(candidates);
       setCandidate(candidates[0]);  // Display the first candidate
@@ -41,12 +41,12 @@ const CandidateSearch = () => {
       <h1>Candidate Search</h1>
       <div>
         <p><strong>Name:</strong> {candidate.name}</p>
-        <p><strong>Username:</strong> {candidate.login}</p>
+        <p><strong>Username:</strong> {candidate.username}</p>
         <p><strong>Location:</strong> {candidate.location}</p>
         <p><strong>Email:</strong> {candidate.email}</p>
         <p><strong>Company:</strong> {candidate.company}</p>
         <p><strong>Profile:</strong> <a href={candidate.html_url} target="_blank" rel="noopener noreferrer">View Profile</a></p>
-        <img src={candidate.avatar_url} alt="Avatar" width="100" height="100" />
+        <img src={candidate.avatar} alt="Avatar" width="100" height="100" />
       </div>
       <button onClick={saveCandidate}>+</button>
       <button onClick={skipCandidate}>-</button>

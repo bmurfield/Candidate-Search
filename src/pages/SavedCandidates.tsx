@@ -29,7 +29,7 @@ const SavedCandidates = () => {
             {savedCandidates.map((candidate: any, index) => (
               <tr key={index}>
                 <td>{candidate.name}</td>
-                <td>{candidate.login}</td>
+                <td>{candidate.username}</td>
                 <td>{candidate.location}</td>
                 <td>{candidate.email}</td>
                 <td>{candidate.company}</td>
