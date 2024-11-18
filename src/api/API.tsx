@@ -10,7 +10,7 @@ console.log(import.meta.env.VITE_GITHUB_TOKEN)
       `https://api.github.com/users?since=${start}`,
       {
         headers: {
-          Authorization: `Bearer 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`,
+          Authorization: `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`,
         },
       }
     );
