@@ -1,6 +1,7 @@
 # Candidate-Search
 
 ## Description
+
 An application to search github pages for job candidates
 
 * I wanted to make a webpage that allows the user to view github pages to find candidates for a job. 
